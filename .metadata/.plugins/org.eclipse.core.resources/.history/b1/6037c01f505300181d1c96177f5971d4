@@ -1,0 +1,15 @@
+package spittr.config;
+
+import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.web.reactive.support.AbstractAnnotationConfigDispatcherHandlerInitializer;
+
+public class SpittrWebAppInitializer 
+ extends AbstractAnnotationConfigDispatcherHandlerInitializer{
+
+	@Override
+	protected Class<?>[] getConfigClasses() {
+		// TODO Auto-generated method stub
+		return new Class<?>[] {WebAppConfigurat;
+	}
+	
+}

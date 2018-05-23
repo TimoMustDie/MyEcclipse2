@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.StudentMapper">
+	<resultMap id="stuMap" type="com.example.dao.Student">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="sex" column="sex"/>
+	</resultMap>
+	
+	<select id="selectAll" resultType="com.example.dao.Student">
+		select * from rftest
+	</select>
+	
+	<delete id="deleteById" parameterType="java.lang.Long">
+		delete from rftest where id=#{id}
+	</delete>
+	
+	<insert id="insertIn" parameterType="com.example.dao.Student">
+		insert into rftest values(#{id},#{name},#{sex})
+	</insert>
+	
+	<update id="update" >
+		update rftest set id=#{id}, name=#{name}, sex=#{sex} where id=#{preid}
+	</update>
+</mapper>

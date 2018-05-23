@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MavenMVC/MavenMVC.iml" filepath="$PROJECT_DIR$/MavenMVC/MavenMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySSM/MySSM.iml" filepath="$PROJECT_DIR$/MySSM/MySSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpringMVC/MySpringMVC.iml" filepath="$PROJECT_DIR$/MySpringMVC/MySpringMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyWeb/MyWeb.iml" filepath="$PROJECT_DIR$/MyWeb/MyWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SBootDemo/SBootDemo.iml" filepath="$PROJECT_DIR$/SBootDemo/SBootDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSMCopy/SSMCopy.iml" filepath="$PROJECT_DIR$/SSMCopy/SSMCopy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servers/Servers.iml" filepath="$PROJECT_DIR$/Servers/Servers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringInAction/SpringInAction.iml" filepath="$PROJECT_DIR$/SpringInAction/SpringInAction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCTest/SpringMVCTest.iml" filepath="$PROJECT_DIR$/SpringMVCTest/SpringMVCTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringPj/SpringPj.iml" filepath="$PROJECT_DIR$/SpringPj/SpringPj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringRESTFUL/SpringRESTFUL.iml" filepath="$PROJECT_DIR$/SpringRESTFUL/SpringRESTFUL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SqlRestful/SqlRestful.iml" filepath="$PROJECT_DIR$/SqlRestful/SqlRestful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZuoShen/ZuoShen.iml" filepath="$PROJECT_DIR$/ZuoShen/ZuoShen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-client/dubbo-client.iml" filepath="$PROJECT_DIR$/dubbo-client/dubbo-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-server/dubbo-server.iml" filepath="$PROJECT_DIR$/dubbo-server/dubbo-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbod-demo/dubbod-demo.iml" filepath="$PROJECT_DIR$/dubbod-demo/dubbod-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myartifactid/myartifactid.iml" filepath="$PROJECT_DIR$/myartifactid/myartifactid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myfeign/myfeign.iml" filepath="$PROJECT_DIR$/myfeign/myfeign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-feigin2/service-feigin2.iml" filepath="$PROJECT_DIR$/service-feigin2/service-feigin2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple/simple.iml" filepath="$PROJECT_DIR$/simple/simple.iml" />
+    </modules>
+  </component>
+</project>

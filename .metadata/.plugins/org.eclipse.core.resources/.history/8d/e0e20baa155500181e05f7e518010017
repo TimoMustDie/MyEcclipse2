@@ -1,0 +1,54 @@
+package StackAndQueue;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		while(sc.hasNext()) {
+			long n=sc.nextLong();
+			int m=sc.nextInt();
+			long[][] rel=new long[m][2];
+			for(int i=0;i<m;i++) {
+				String[] strings=sc.next().split(",");
+				rel[i][0]=Long.valueOf(strings[0]);
+				rel[i][1]=Long.valueOf(strings[1]);
+			}
+			boolean ok=true;
+			for(int i=0;i<m;i++) {
+				long max=Math.max(rel[i][0], rel[i][1]);
+				long min=Math.min(rel[i][0], rel[i][1]);
+				if(max-min==1&&max%2==0) {
+					System.out.println("no");
+					break;
+				}
+					
+				for(int j=i;j<m;j++) {
+					if(rel[i][0]==rel[j][0]&&(rel[i][1]+1==rel[j][1]||rel[i][1]-1==rel[j][1])){
+						if(Math.max(rel[i][1], rel[j][1])%2==0)
+							ok=false;
+					}else if (rel[i][0]==rel[j][1]&&(rel[i][1]+1==rel[j][0]||rel[i][1]-1==rel[j][0])) {
+						if(Math.max(rel[i][1], rel[j][0])%2==0)
+							ok=false;
+					}else if (rel[i][1]==rel[j][0]&&(rel[i][0]+1==rel[j][1]||rel[i][0]-1==rel[j][1])) {
+						if(Math.max(rel[i][0], rel[j][1])%2==0)
+							ok=false;
+					}else if (rel[i][1]==rel[j][1]&&(rel[i][0]+1==rel[j][0]||rel[i][0]-1==rel[j][0])) {
+						if(Math.max(rel[i][0], rel[j][0])%2==0)
+							ok=false;
+					}
+					
+					if(!ok) {
+						System.out.println("no");
+						break;
+					}
+				}
+				if(!ok)
+					break;
+				if(ok&&i==m-1)
+					System.out.println("yes");
+			}
+		}
+	}
+	
+}

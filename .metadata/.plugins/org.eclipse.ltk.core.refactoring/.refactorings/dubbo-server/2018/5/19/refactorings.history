@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;dubbo-server/src/test/java/main/ServerMain.java&apos; to &apos;ServerMain2.java&apos;" description="Rename resource &apos;ServerMain.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test/java/main/ServerMain.java" name="ServerMain2.java" stamp="1525963898711" updateReferences="true"/>
+</session>

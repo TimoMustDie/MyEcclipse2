@@ -1,0 +1,21 @@
+package Chap1;
+// µœ÷∞À¥Û≈≈–Ú
+public class EightSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static void directSort(int [] arrays) {
+		int length=arrays.length;
+		int j;
+		for(int i=0;i<length;i++) {
+			int tmp=arrays[i];
+			for(j=i;j>0&&arrays[j-1]>tmp;j--) {
+				arrays[j]=arrays[j-1];
+			}
+			arrays[j]=tmp;
+		}
+	}
+
+}

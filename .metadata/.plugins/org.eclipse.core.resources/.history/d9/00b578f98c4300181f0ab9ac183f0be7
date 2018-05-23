@@ -1,0 +1,73 @@
+package StackAndQueue;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main{
+	
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String string=sc.nextLine();
+		int k=sc.nextInt();
+		int[] count=new int[26];
+		for(int i=0;i<26;i++)
+			count[i]=0;
+		for(int i=0;i<string.length();i++) {
+			count[string.charAt(i)-'a']++;
+		}
+		Arrays.sort(count);
+		
+		while(k!=0) {
+			int max=maxIndex(count);
+			count[max]--;
+			k--;
+		}
+		long sum=getSum(count);
+		System.out.println(sum);
+		
+		
+	}
+	public static long getSum(int[] count) {
+		long sum=0;
+		for(int i=0;i<26;i++)
+			sum+=count[i]*count[i];
+		return sum;
+	}
+	public static int maxIndex(int[] count) {
+		int max=0;
+		for(int i=25;i>=0;i--) {
+			if(count[i]>count[max])
+				max=i;
+		}
+			
+		return max;
+	}
+}	
+		
+		/*
+		Scanner sc=new Scanner(System.in);
+		float n=sc.nextFloat();
+		float m=sc.nextFloat();
+		float max=Math.max(n, m);
+		int count=0;
+		float mul=n*m;
+		for(int i=1;i<(int)max+1;i++) {
+			float k=i*i;
+			if(k<mul) {
+				for(int j=1;j<m+1;j++) {
+					if(k%j==0) {
+						float d=k/j;
+						if(d<n+1&&d>0)
+							count++;
+					}else {
+						continue;
+					}
+				}
+			}
+		}
+		System.out.println(count);
+	}
+   
+}
+*/

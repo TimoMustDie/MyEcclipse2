@@ -1,0 +1,12 @@
+package Chap1;
+
+
+public class Main {
+	
+	public static void main(String[] args) {
+		String x="ac";
+		byte y=(byte)Byte.valueOf(x);
+		System.out.println(y+" "+x.hashCode());
+	}
+    
+}

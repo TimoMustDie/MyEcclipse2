@@ -1,0 +1,68 @@
+package StackAndQueue;
+
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Main{
+	private int x=0;
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+		Long a=0L,c=0L,g=0L,t=0L;
+		for(int i=0;i<str.length();i++) {
+			switch (str.charAt(i)) {
+			case 'A':
+				a++;
+				break;
+			case 'C':
+				c++;
+				break;
+			case 'T':
+				t++;
+				break;
+			case 'G':
+				g++;
+				break;
+			default:
+				break;
+			}
+		}
+		Long max=Math.max(a, c);
+		Long min=Math.min(a, c);
+		max=Math.max(max, t);
+		min=Math.min(min, t);
+		max=Math.max(max, g);
+		min=Math.min(min, g);
+		System.out.println(max-min);
+	}
+	
+}	
+		
+		/*
+		Scanner sc=new Scanner(System.in);
+		float n=sc.nextFloat();
+		float m=sc.nextFloat();
+		float max=Math.max(n, m);
+		int count=0;
+		float mul=n*m;
+		for(int i=1;i<(int)max+1;i++) {
+			float k=i*i;
+			if(k<mul) {
+				for(int j=1;j<m+1;j++) {
+					if(k%j==0) {
+						float d=k/j;
+						if(d<n+1&&d>0)
+							count++;
+					}else {
+						continue;
+					}
+				}
+			}
+		}
+		System.out.println(count);
+	}
+   
+}
+*/

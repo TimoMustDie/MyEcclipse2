@@ -1,0 +1,67 @@
+package StackAndQueue;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		long x1=sc.nextLong();
+		int k1=sc.nextInt();
+		long x2=sc.nextLong();
+		int k2=sc.nextInt();
+		String str1=new String();
+		for(int i=0;i<k1;i++)
+			str1=str1+x1;
+		
+		String str2=new String();
+		for(int i=0;i<k2;i++)
+			str2=str2+x2;
+		if(str1.equals(str2))
+			System.out.print("Equal");
+		else if (str1.length()>str2.length()) {
+			System.out.print("Greater");
+			
+		}else if (str1.length()==str2.length()) {
+			for(int i=0;i<str1.length();i++) {
+				if(str1.charAt(i)==str2.charAt(i))
+					continue;
+				else if (str1.charAt(i)>str2.charAt(i)) {
+					System.out.print("Greater");
+				}else {
+					System.out.println("Less");
+				}
+			}
+		}else {
+			System.out.print("Less");
+		}
+	}
+	
+}	
+		
+		/*
+		Scanner sc=new Scanner(System.in);
+		float n=sc.nextFloat();
+		float m=sc.nextFloat();
+		float max=Math.max(n, m);
+		int count=0;
+		float mul=n*m;
+		for(int i=1;i<(int)max+1;i++) {
+			float k=i*i;
+			if(k<mul) {
+				for(int j=1;j<m+1;j++) {
+					if(k%j==0) {
+						float d=k/j;
+						if(d<n+1&&d>0)
+							count++;
+					}else {
+						continue;
+					}
+				}
+			}
+		}
+		System.out.println(count);
+	}
+   
+}
+*/

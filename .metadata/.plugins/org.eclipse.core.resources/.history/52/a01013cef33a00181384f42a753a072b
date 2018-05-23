@@ -1,0 +1,171 @@
+package Chap1;
+
+import java.lang.reflect.AnnotatedArrayType;
+import java.util.Date;
+
+import javax.swing.text.AbstractDocument.LeafElement;
+
+// µœ÷∞À¥Û≈≈–Ú
+public class EightSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] arrays = {3,2,5,1,6,9,7,8,4,14,0,10,17,20,11,13,12,11,19,15};
+		EightSort sort=new EightSort();
+		
+		//≤Â»Î≈≈–Ú
+		sort.insertSort(arrays);
+		System.out.println("≤Â»Î≈≈–Ú:");
+		sort.printArrays(arrays);
+		
+		//—°‘Ò≈≈–Ú
+		sort.chooseSort(arrays);
+		System.out.println("—°‘Ò≈≈–Ú");
+		sort.printArrays(arrays);
+		
+		//√∞≈›≈≈–Ú
+		sort.bubbleSort(arrays);
+		System.out.println("√∞≈›≈≈–Ú");
+		sort.printArrays(arrays);
+		
+		//πÈ≤¢≈≈–Ú
+		int [] tmparray=new int[arrays.length];
+		sort.mergeSort(arrays, tmparray, 0, arrays.length-1);
+		System.out.println("πÈ≤¢≈≈–Ú");
+		sort.printArrays(arrays);
+		
+		//øÏÀŸ≈≈–Ú
+		sort.quikSort(arrays, 0, arrays.length-1);
+		System.out.println("øÏÀŸ≈≈–Ú");
+		sort.printArrays(arrays);
+		
+		//∂—≈≈–Ú
+		sort.heapSor(arrays);
+		System.out.println("∂—≈≈–Ú");
+		sort.printArrays(arrays);
+		
+	}
+	public  void insertSort(int [] arrays) {
+		int length=arrays.length;
+		int j;
+		for(int i=0;i<length;i++) {
+			int tmp=arrays[i];
+			for(j=i;j>0&&arrays[j-1]>tmp;j--) {
+				arrays[j]=arrays[j-1];
+			}
+			arrays[j]=tmp;
+		}
+	}
+	
+	public void chooseSort(int[] arrays) {
+		int len=arrays.length;
+		int j;
+		for(int i=0;i<len;i++) {
+			int min=i;
+			for(j=i+1;j<len;j++) {
+				if(arrays[j]<arrays[min])
+					min=j;
+			}
+			if(min!=i) {
+				int t=arrays[i];
+				arrays[i]=arrays[min];
+				arrays[min]=t;
+			}
+			
+		}
+	}
+	
+	public void bubbleSort(int arrays[]) {
+		int len=arrays.length;
+		for(int i=0;i<len-1;i++) {
+			for(int j=0;j<len-1-i;j++) {
+				if(arrays[j]>arrays[j+1]) {
+					int tmp=arrays[j];
+					arrays[j]=arrays[j+1];
+					arrays[j+1]=tmp;
+				}
+			}
+		}
+	}
+	
+	//πÈ≤¢≈≈–Ú
+	public void mergeSort(int[] sorcearrays, int[] tmparray, int start,  int end) {
+		int mid;
+		if(start<end) {
+			mid=(start+end)/2;
+			mergeSort(sorcearrays, tmparray, start, mid);
+			mergeSort(sorcearrays, tmparray, mid+1, end);
+		}
+	}
+	public void merge(int [] sorcearrays, int tmparrays[],int start, int mid, int end) {
+		int i=start, j=mid+1, k=start;
+		while(i!=mid+1&&j!=end+1) {
+			if(sorcearrays[i]>=sorcearrays[j]) {
+				tmparrays[k++]=sorcearrays[j];
+			}else {
+				tmparrays[k++]=sorcearrays[i];
+			}
+		}
+		while(i!=mid+1)
+			tmparrays[k++]=sorcearrays[i++];
+		while(j!=end+1)
+			tmparrays[k++]=sorcearrays[j++];
+		for(i=start;i<=end;i++)
+			sorcearrays[i]=tmparrays[i];
+	}
+	
+	//øÏÀŸ≈≈–Ú
+	public int pardition(int[] arrays, int start, int end) {
+		int index=start;
+		int tmp=arrays[start];
+		while(start<end) {
+			while(arrays[end]>=tmp&&start<end)
+				end--;
+			arrays[end]=arrays[start];
+			while(arrays[start]>=tmp&&start<end)
+				start++;
+		}
+		arrays[end]=tmp;
+		index=end;
+		
+		return index;
+	}
+	public void quikSort(int[] arrays, int start, int end) {
+		if(start>=end)
+			return;
+		int index=pardition(arrays, start, end);
+		quikSort(arrays, start, index-1);
+		quikSort(arrays, index+1, end);
+	}
+	
+	//∂—≈≈–Ú
+	public void heapAdjust(int[] arrays, int i,int length) {
+		int child=0;
+		for(getClass();2*i+1<length;i=child) {
+			if((child+1)<length-1&&arrays[child+1]>arrays[child])
+				child++;
+			if(arrays[i]<arrays[child]) {
+				int tmp=arrays[i];
+				arrays[i]=arrays[child];
+				arrays[child]=tmp;
+			}else {
+				break;
+			}
+		}
+	}
+	public void heapSor(int[] arrays) {
+		for(int i=arrays.length/2-1;i>=0;i--)
+			heapAdjust(arrays, i,arrays.length);
+		for(int i=arrays.length-1;i>0;i--) {
+			arrays[i]=arrays[0]^arrays[i];
+			arrays[0]=arrays[0]^arrays[i];
+			heapAdjust(arrays, 0,i);
+		}
+	}
+	public void printArrays(int[] arrays) {
+		for(int i=0;i<arrays.length;i++)
+			System.out.print(arrays[i]+"\t");
+		System.out.println();
+		System.out.println();
+	}
+}

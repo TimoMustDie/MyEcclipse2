@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean id="logic1" class="com.chap5.bigdemo.Logic1"></bean>
+ <bean id="logic2" class="com.chap5.bigdemo.Logic2"></bean>
+ 
+ <!--  在使用ProxyFactoryBean的时候要把自动代理给关掉
+ <bean id="autoAdvisor" 
+ class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"></bean>
+ -->
+ 
+ <bean id="exceptionHandler" class="com.chap5.bigdemo.ExceptionHandler"></bean>
+ <bean id="exceptionHandlerAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+ 	<property name="advice">
+ 		<ref bean="exceptionHandler"></ref>
+ 	</property>
+ 	<property name="patterns">
+ 		<value>.*.*</value>
+ 	</property>
+ </bean>
+ <bean id="timeHandler" class="com.chap5.bigdemo.TimeHandler"></bean>
+ <bean id="timeHandlerAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+ 	<property name="advice">
+ 		<ref bean="timeHandler"></ref>
+ 	</property>
+ 	<property name="patterns">
+ 		<value>.*.*</value>
+ 	</property>
+ </bean>
+ <bean id="logic1Proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+ 	<property name="proxyInterfaces">
+ 		<value>com.chap5.bigdemo.LogicInterface</value>
+ 	</property>
+ 	<property name="target">
+ 		<ref bean="logic1"></ref>
+ 	</property>
+ 	<property name="interceptorNames">
+ 		<list>
+ 			<value>timeHandlerAdvisor</value>
+ 		</list>
+ 	</property>
+ </bean>
+ <bean id="logic2Proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+ 	<property name="proxyTargetClass">
+ 		<value>true</value>
+ 	</property>
+ 	<property name="target">
+ 		<ref bean="logic2"></ref>
+ 	</property>
+ 	<property name="interceptorNames">
+ 		<list>
+ 			<value>exceptionHandler</value>
+ 		</list>
+ 	</property>
+ </bean>
+ 
+ 
+ 
+ 
+ 
+ 
+ </beans>

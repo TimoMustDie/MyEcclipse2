@@ -1,0 +1,11 @@
+package com.example.dao;
+
+import java.util.HashMap;
+import java.util.List;
+
+public interface StudentDao {
+	public List<Student> getStudentList();
+	public boolean deleteById(long id);
+	public boolean insertIn(Student stu);
+	public boolean update(HashMap<String,Object> map);
+}

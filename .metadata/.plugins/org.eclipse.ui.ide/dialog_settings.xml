@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\SpringCloud\Learn-master"/>
+		<item value="D:\SpringCloud\SwaggerTest2"/>
+		<item value="D:\SpringCloud\SpringBootRestApiSwagger-master"/>
+		<item value="C:\Users\victory\Desktop\SpringCloudLearning-master\chapter7\eureka-server"/>
+		<item value="C:\Users\victory\Desktop\SpringCloudLearning-master\chapter7\config-server"/>
+		<item value="C:\Users\victory\Desktop\SpringCloudLearning-master\chapter7\config-client"/>
+		<item value="C:\Users\victory\Desktop\SpringCloudLearning-master\chapter7"/>
+		<item value="D:\SpringCloud\SpringCloudLearning-master\chapter4\eureka-server"/>
+		<item value="D:\SpringCloud\SpringCloudLearning-master\chapter4\eureka-client"/>
+		<item value="C:\Users\victory\Desktop\SpringCloudLearning-master\chapter4\service-hi"/>
+		<item value="C:\Users\victory\Desktop\SpringCloudLearning-master\chapter4\eureka-server"/>
+		<item value="C:\Users\victory\Desktop\SpringCloudLearning-master\chapter4\service-ribbon"/>
+		<item value="C:\Users\victory\Desktop\SpringCloudLearning-master\chapter4\service-feign"/>
+		<item value="C:\Users\victory\Desktop\SpringCloudLearning-master\chapter1\service-hi"/>
+		<item value="C:\Users\victory\Desktop\SpringCloudLearning-master\chapter1\eureka-server"/>
+		<item value="D:\课程相关\Python\Chapter_05"/>
+		<item value="D:\javaProject\StudentManage"/>
+		<item value="D:\javaProject\SpringService"/>
+		<item value="D:\javaProject\HateEclipse2"/>
+		<item value="D:\javaProject\JAVADemoAll"/>
+		<item value="D:\javaProject\HateEclipse"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\MyEclipse"/>
+			<item value="C:\Users\victory\Desktop\javaweb"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1521695102359" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+</section>

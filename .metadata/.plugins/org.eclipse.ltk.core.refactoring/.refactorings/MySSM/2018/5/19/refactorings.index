@@ -1,0 +1,3 @@
+1525674505877	Move 'dispatcherServlet-servlet.xml' to 'WEB-INF'
+1525674508329	Move 'ssm.xml' to 'WEB-INF'
+1525674511924	Move 'ssm-config.xml' to 'WEB-INF'

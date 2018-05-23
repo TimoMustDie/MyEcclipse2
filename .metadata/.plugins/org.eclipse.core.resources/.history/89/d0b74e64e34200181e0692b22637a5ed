@@ -1,0 +1,69 @@
+package StackAndQueue;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		Long[] data=new Long[n];
+		for(int i=0;i<n;i++)
+			data[i]=0L;
+		for(int i=0;i<n;i++) {
+			Long k=sc.nextLong();
+			Long[] d=new Long[6];
+			for(int t=0;t<6;t++)
+				d[t]=0L;
+			int j=0;
+			while(k!=0) {
+				d[j++]=k%10;
+				k=k/10;
+			}
+			Arrays.sort(d);
+			j=0;
+			while(d[j]==0)
+				j++;
+			for(int t=j;t<6;t++) {
+				if(d[t]!=0)
+					data[i]=data[i]*10+d[t];
+				else {
+					break;
+				}
+			}
+		}
+		Long min=0L;
+		for(int i=0;i<data.length;i++)
+			data[i];
+		System.out.println(min);
+	}
+	
+}	
+		
+		/*
+		Scanner sc=new Scanner(System.in);
+		float n=sc.nextFloat();
+		float m=sc.nextFloat();
+		float max=Math.max(n, m);
+		int count=0;
+		float mul=n*m;
+		for(int i=1;i<(int)max+1;i++) {
+			float k=i*i;
+			if(k<mul) {
+				for(int j=1;j<m+1;j++) {
+					if(k%j==0) {
+						float d=k/j;
+						if(d<n+1&&d>0)
+							count++;
+					}else {
+						continue;
+					}
+				}
+			}
+		}
+		System.out.println(count);
+	}
+   
+}
+*/

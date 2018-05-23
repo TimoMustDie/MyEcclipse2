@@ -1,0 +1,290 @@
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7494e528]
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - ==>  Preparing: select * from test 
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - <==      Total: 10
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7494e528]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7494e528]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7494e528]
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - ==>  Preparing: select * from country 
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - <==      Total: 4
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7494e528]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7494e528]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7f13d6e]
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - ==>  Preparing: select * from country 
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - <==      Total: 4
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7f13d6e]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7f13d6e]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51cdd8a]
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - ==>  Preparing: select * from country 
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - <==      Total: 4
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51cdd8a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@51cdd8a]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51cdd8a]
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - ==>  Preparing: select * from country 
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.CountryMapper.selectAll - <==      Total: 4
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51cdd8a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@51cdd8a]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4232c52b]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4232c52b]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@4232c52b]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587d1d39]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1001(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587d1d39]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select id,user_name,user_email from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1001(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id like ? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1001(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587d1d39]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1001(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1001(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4abdb505]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587d1d39]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 2(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 0
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587d1d39]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@587d1d39]
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@26a7b76d]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587d1d39]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@57e1b0c]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.select - ==>  Preparing: select * from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.select - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.select - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d8d30f7]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@57e1b0c]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.select - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.select - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.select - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d8d30f7]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587d1d39]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select * from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587d1d39]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@528931cf]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@587d1d39]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a187f14]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user where id=? 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - ==> Parameters: 1(Long)
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@44c8afef]
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==>  Preparing: select id, user_name userName, user_password userPassword, user_email userEmail, user_info userInfo, head_img headImg, create_time createTime from sys_user 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - ==> Parameters: 
+DEBUG main tk.mybatis.simple.mapper.UserMapper.selectAll - <==      Total: 2

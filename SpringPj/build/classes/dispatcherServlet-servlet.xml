@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+ 	<!-- 定义映射 -->
+ 	<property name="mappings">
+ 		<props>
+ 			<prop key="helloWorld">helloWorldAction</prop>
+ 		</props>
+ 	</property>
+ </bean>
+ <!-- 定义视图及jsp存放路径 -->
+ <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="viewClass">
+		<value>org.springframework.web.servlet.view.InternalResourceView</value>
+	</property> 
+	<property name="prefix">
+		<value>/jsps/</value>
+	</property>
+	<property name="suffix">
+		<value>.jsp</value>
+	</property>
+ </bean>
+ <!-- 定义控制器 -->
+ <bean id="helloWorldAction" class="com.springmvc.HelloWorldAction">
+ <!--
+ 	<property name="helloWorld">
+ 		<value>HelloWorld</value>
+ 	</property>
+-->
+ 	<property name="viewPage" value="show"></property>
+ </bean>
+ <!-- 定义i多动作参数 -->
+ <bean id="paraMethodResolver" 
+ class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+ 	<property name="paramName">
+ 		<value>method</value>
+ 	</property>
+ </bean>
+ </beans>

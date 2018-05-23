@@ -1,0 +1,36 @@
+package Chap1;
+
+public class FastArraySort {
+	public static void main(String[] args) {
+		int [] data= {4,2,1,6,8,5,11,10,16,14,13};
+		fastSort(data, 0, data.length-1);
+		
+		for(int i=0;i<data.length;i++)
+			System.out.print(data[i]+"\t");
+
+	}
+	public static int partidation(int[] data, int start, int end) {
+		int index=(int)(Math.random()*(end-start))+start;
+		int key=data[index];
+		while(start<end) {
+			while(data[end]>=key&&start<end) {
+				end--;
+			}
+			data[start]=data[end];
+			while(data[start]<=key&&start<end) {
+				start++;
+			}
+			data[end]=data[start];
+		}
+		data[end]=key;
+		return end;
+	}
+	public static void fastSort(int[] data, int start, int end) {
+		if(start>=end)
+			return;
+		int index=partidation(data, start, end);
+		fastSort(data, start, index-1);
+		fastSort(data, index+1, end);
+	}
+
+}

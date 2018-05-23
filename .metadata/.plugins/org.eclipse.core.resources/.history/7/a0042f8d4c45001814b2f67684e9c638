@@ -1,0 +1,25 @@
+package StackAndQueue;
+
+
+
+import java.util.HashMap;
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		HashMap<String, Integer> map=new HashMap<>();
+		while(sc.hasNext()) {
+			String str=sc.nextLine();
+			String[] strings=str.split(" ");
+			String[] files=strings[0].split("\\");
+			String name=files[files.length-1];
+			
+			if(map.containsKey(name)) {
+				map.put(name, map.get(name)+1);
+			}else {
+				map.put(name,1);
+			}
+		}
+		
+	}
+}

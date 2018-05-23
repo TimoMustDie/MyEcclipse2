@@ -1,0 +1,33 @@
+package StackAndQueue;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		while(sc.hasNext()) {
+			long n=sc.nextLong();
+			int m=sc.nextInt();
+			long[][] rel=new long[m][2];
+			for(int i=0;i<m;i++) {
+				rel[i][0]=sc.nextLong();
+				rel[i][1]=sc.nextLong();
+			}
+			boolean ok=true;
+			for(int i=0;i<m;i++) {
+				for(int j=i;j<m;j++) {
+					if(rel[i][0]==rel[j][0]&&(rel[i][0]+1==rel[j][1]||rel[i][0]-1==rel[j][1])){
+						System.out.println("no");
+						ok=false;
+						break;
+					}else if (ok) {
+						
+					}
+				}
+				if(ok&&i==m-1)
+					System.out.println("yes");
+			}
+		}
+	}
+	
+}

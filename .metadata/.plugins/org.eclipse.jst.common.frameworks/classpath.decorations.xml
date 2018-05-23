@@ -1,0 +1,22 @@
+<classpath>
+  <container id="SpringPj!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/MyEclipse/SpringPj/WebContent/WEB-INF/lib/spring-context-5.0.1.RELEASE.jar">
+      <source-attachment-path>D:/eclipse/spring-framework-master.zip</source-attachment-path>
+    </entry>
+    <entry id="D:/MyEclipse/SpringPj/WebContent/WEB-INF/lib/spring-beans-5.0.1.RELEASE.jar">
+      <source-attachment-path>D:/迅雷下载/spring-framework-5.0.1.RELEASE.zip</source-attachment-path>
+    </entry>
+    <entry id="D:/MyEclipse/SpringPj/WebContent/WEB-INF/lib/spring-webmvc-5.0.1.RELEASE.jar">
+      <source-attachment-path>D:/迅雷下载/spring-framework-5.0.1.RELEASE.zip</source-attachment-path>
+    </entry>
+    <entry id="D:/MyEclipse/SpringPj/WebContent/WEB-INF/lib/log4j-1.2.17.jar">
+      <source-attachment-path>D:/MyEclipse/SpringPj/WebContent/WEB-INF/lib/log4j-1.2.17.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/MyEclipse/SpringPj/WebContent/WEB-INF/lib/spring-aop-5.0.1.RELEASE.jar">
+      <source-attachment-path>D:/eclipse/spring-framework-master.zip</source-attachment-path>
+    </entry>
+    <entry id="D:/MyEclipse/SpringPj/WebContent/WEB-INF/lib/spring-web-5.0.1.RELEASE.jar">
+      <source-attachment-path>D:/迅雷下载/spring-framework-5.0.1.RELEASE.zip</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

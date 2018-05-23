@@ -1,0 +1,33 @@
+package com.chap6;
+
+import java.lang.reflect.Method;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.chap5.FinanceInterFace;
+public class Test extends com.chap5.TimeBook implements FinanceInterFace{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext context=new ClassPathXmlApplicationContext("com/chap6/chap6.xml");
+		HelloDAO hello=(HelloDAO)context.getBean("helloDAO");
+		hello.create("none");
+		Class class1=new Test().getClass();
+		Method[] methods=class1.getDeclaredMethods();
+		for(int i=0;i<methods.length;i++)
+			System.out.println(methods[i]);
+	}
+	public void my() {
+		
+	}
+	private void my2() {
+		
+	}
+	@Override
+	public void doAuditing(String name) {
+		// TODO Auto-generated method stub
+		super.doAuditing(name);
+	}
+
+}

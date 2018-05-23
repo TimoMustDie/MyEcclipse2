@@ -1,0 +1,38 @@
+package Chap1;
+
+import java.util.Date;
+
+//实现八大排序
+public class EightSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] arrays = {3,2,5,1,6,9,7,8,4,14,0,10,17,20,11,13,12,11,19,15};
+		EightSort sort=new EightSort();
+		int [] data=new int[10000];
+		for(int i=0;i<10000;i++)
+			data[i]=(int)(Math.random()*10000);
+		sort.insertSort(data);
+		sort.insertSort(arrays);
+		System.out.println("插入排序:");
+		for(int i=0;i<arrays.length;i++)
+			System.out.print(arrays[i]+"\t");
+		
+		
+	}
+	public  void insertSort(int [] arrays) {
+		int length=arrays.length;
+		int j;
+		long time1=System.currentTimeMillis();
+		System.out.println(new Date().getTime());
+		for(int i=0;i<length;i++) {
+			int tmp=arrays[i];
+			for(j=i;j>0&&arrays[j-1]>tmp;j--) {
+				arrays[j]=arrays[j-1];
+			}
+			arrays[j]=tmp;
+		}
+		System.out.println("时间:"+new Date().getTime());
+	}
+
+}

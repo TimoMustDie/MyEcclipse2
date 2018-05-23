@@ -1,0 +1,12 @@
+package Chap1;
+
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Object x="ab";
+		Object y=3105;
+		System.out.println(x.equals(y.hashCode()));
+	}
+    
+}

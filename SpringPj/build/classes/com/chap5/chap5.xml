@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="logProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+	<!-- 这里是代理的接口 -->
+	<property name="proxyTargetClass">
+		<value>true</value>
+	</property>
+	<property name="proxyInterfaces">
+		<value>com.chap5.TimeBookInterface</value>
+	</property>
+	<!-- 指明要代理的目标类中插入的Advice -->
+	<property name="target">
+		<ref bean="timeBook"></ref>
+	</property>
+	<!-- 指明要在代理的目标类中 -->
+	<property name="interceptorNames">
+		<list>
+			<value>log</value>
+		</list>
+	</property>
+</bean>
+<!-- log就是代理的advice -->
+<bean id="log" class="com.chap5.LogAround"></bean>
+<bean id="timeBook" class="com.chap5.TimeBook"></bean>
+ <bean id="finance" class="com.chap5.Finance"/>
+ <bean id="logProxy1" class="org.springframework.aop.framework.ProxyFactoryBean">
+ 	<property name="proxyInterfaces">
+ 		<value>com.chap5.FinanceInterFace</value>
+ 	</property>
+ 	<property name="target">
+ 		<ref bean="finance"></ref>
+ 	</property>
+ 	<!-- 指定要代理的类 -->
+ 	<property name="interceptorNames">
+ 		<list>
+ 			<value>log</value>
+ 		</list>
+ 	</property>
+ 	
+ </bean>
+ 
+ <!-- 采用logBefore的方式 -->
+ <bean id="logBefore" class="com.chap5.LogBefore"></bean>
+ <bean id="logBeforeAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+ 	<property name="advice">
+ 		<ref bean="logBefore"></ref>
+ 	</property>
+ 	<property name="patterns">
+ 		<value>.*doCheck.*</value>
+ 	</property>
+ </bean>
+ <bean id="logProxy2" class="org.springframework.aop.framework.ProxyFactoryBean">
+ 	<property name="proxyInterfaces">
+ 		<value>com.chap5.TimeBookInterface</value>
+ 	</property>
+ 	<property name="target">
+ 		<ref bean="timeBook"></ref>
+ 	</property>
+ 	<property name="interceptorNames">
+ 		<list>
+ 			<value>logBeforeAdvisor</value>
+ 		</list>
+ 	</property>
+ </bean>
+ 
+ <!-- 使用AfterRunning方式 -->
+ <bean id="logAfterAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+ 	<!-- 这是适配器 -->
+ 	<property name="advice">
+ 		<ref bean="logAfter"></ref>
+ 	</property>
+ 	<property name="patterns">
+ 		<value>.*doAuditing.*</value>
+ 	</property>
+ </bean>
+ <bean id="logAfter" class="com.chap5.LogAfter"></bean>
+ <bean id="logProxy3" class="org.springframework.aop.framework.ProxyFactoryBean">
+ 	<property name="proxyInterfaces">
+ 		<value>com.chap5.TimeBookInterface</value>
+ 	</property>
+ 	<property name="target">
+ 		<ref bean="timeBook"></ref>
+ 	</property>
+ 	<property name="interceptorNames">
+ 		<list>
+ 			<value>logAfterAdvisor</value>
+ 		</list>
+ 	</property>
+ </bean>
+ 
+ <!-- 实现Throw通知 -->
+ <bean id="logThrow" class="com.chap5.LogThrow"></bean>
+ <bean id="logThrowAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+ 	<property name="advice">
+ 		<ref bean="logThrow"></ref>
+ 	</property>
+ 	<property name="patterns">
+ 		<value>.*doAuditing.*</value>
+ 	</property>
+ </bean>
+ <bean id="logProxy4" class="org.springframework.aop.framework.ProxyFactoryBean">
+ 	<property name="proxyInterfaces">
+ 		<value>com.chap5.TimeBookInterface</value>
+ 	</property>
+ 	<property name="target">
+ 		<ref bean="timeBook"></ref>
+ 	</property>
+ 	<property name="interceptorNames">
+ 		<list>
+ 			<value>logThrowAdvisor</value>
+ 		</list>
+ 	</property>
+ </bean>
+ 
+ <bean id="autoProxyCreator"
+ class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"></bean>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </beans>

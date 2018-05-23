@@ -1,0 +1,12 @@
+package Chap1;
+
+
+public class Main {
+	
+	public static void main(String[] args) {
+		String x="0";
+		
+		System.out.println(x.hashCode());
+	}
+    
+}
